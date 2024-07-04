@@ -240,13 +240,15 @@ class _VideoPlayerPageState extends State<VideoPlayerPage> {
                                 ],
                               ),
                               IconButton(
-                                
-                                  onPressed: ()=> _controller.value.isPlaying ? _controller.pause() : _controller.play() ,
-                                  icon: Icon(
-                                    _controller.value.isPlaying
-                                        ? Icons.pause
-                                        : Icons.play_arrow,
-                                  ),)
+                                onPressed: () => _controller.value.isPlaying
+                                    ? _controller.pause()
+                                    : _controller.play(),
+                                icon: Icon(
+                                  _controller.value.isPlaying
+                                      ? Icons.pause
+                                      : Icons.play_arrow,
+                                ),
+                              )
                             ],
                           )
                         : const CircularProgressIndicator(),
@@ -289,3 +291,5 @@ class _VideoPlayerPageState extends State<VideoPlayerPage> {
     );
   }
 }
+// https://www.youtube.com/watch?v=P3l9o31AoeQ&t=187s 
+// video Tutorial
